@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__section {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.app__form {
+    display: grid;
+    gap: 10px;
+
+    input {
+        padding: 10px;
+        width: 300px; 
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        padding: 10px;
+        width: 300px;
+        height: 70px; 
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .btn__submit {
+        width: 100%;
+        padding: 5px 10px;
+        cursor: pointer;
+        background: none;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 20px;
+        border: none;
+        
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        }
+    }
+}
+
+.note__container {
+    margin: 20px 0;
+    display: grid;
+    gap: 10px;
+    
+    .app__note {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 5px;
+        padding: 10px;
+        display: grid;
+        gap: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .btn__group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+
+        .btn {
+            width: 50px;
+            padding: 2px 6px;
+            background: none;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn__delete {
+            background-color: #FF0000;
+            color: #FFFFFF;
+        }
+
+        .btn__edit {
+            background-color: #F6DB55;
+        }
+    }
+}
