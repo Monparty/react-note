@@ -6,7 +6,9 @@
 
 .app__section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     width: 100%;
     padding: 10px;
 }
@@ -38,7 +40,7 @@
         width: 100%;
         padding: 5px 10px;
         cursor: pointer;
-        background: none;
+        background: white;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         border-radius: 20px;
         border: none;
@@ -51,6 +53,7 @@
 
 .note__container {
     margin: 20px 0;
+    width: 300px;
     display: grid;
     gap: 10px;
     
@@ -87,4 +90,26 @@
             background-color: #F6DB55;
         }
     }
+}
+
+.app-edit-note {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100dvh;
+    width: 100%;
+    padding: 10px;
+}
+
+.app-edit-note-content {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100dvh;
+    width: 100%;
+    background-color: #F9F9FB;
 }
